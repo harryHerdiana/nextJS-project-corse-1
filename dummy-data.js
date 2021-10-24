@@ -4,7 +4,7 @@ const DUMMY_EVENTS = [
       title: 'Programming for everyone',
       description:
         'Everyone can learn to code! Yes, everyone! In this live event, we are going to go through all the key basics and get you started with programming as well.',
-      location: 'Somestreet 25, 12345 San Somewhereo',
+      location: 'Somestreet 25, 12345 San Somewhere',
       date: '2021-05-12',
       image: 'https://images.unsplash.com/photo-1587620962725-abab7fe55159?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1031&q=80',
       isFeatured: false,

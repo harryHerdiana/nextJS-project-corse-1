@@ -1,0 +1,17 @@
+.text{
+    font-size: 1.2rem;
+    width: 100%;
+    display: flex;
+    align-items: baseline;
+    padding: 1rem 10%;
+    height: 5rem;
+    background-color: #202020; 
+    color: #94fdfd;
+    position: fixed;
+    bottom:-3vh;
+}
+
+.text_container{
+    position: absolute;
+    bottom:2vh;
+}

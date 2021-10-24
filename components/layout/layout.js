@@ -1,4 +1,5 @@
 import { Fragment } from "react"
+import Copyright from "../copyright/Copyright"
 import MainHeader from "./main-header"
 
 function Layout(props){
@@ -10,6 +11,7 @@ function Layout(props){
             <main>
                 {props.children}
             </main>
+            <Copyright/>
         </Fragment>
     )
 }
