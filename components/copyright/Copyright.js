@@ -4,7 +4,8 @@ import classes from "./Copyright.module.css";
 
 export default function Copyright() {
   return (
-    <Fragment className={classes.text_container}>
+    <Fragment >
+      <div className={classes.text_container}>
       <h2 className={classes.text}>
         {"Copyright © "}
         <Link color="inherit" href="https://jabarcodingcamp.id/">
@@ -17,6 +18,7 @@ export default function Copyright() {
         &nbsp;
         {new Date().getFullYear()}.
       </h2>
+      </div>
     </Fragment>
   );
 }
