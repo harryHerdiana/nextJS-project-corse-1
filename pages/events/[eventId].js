@@ -5,6 +5,8 @@ import EventLogistic from "../../components/event-detail/event-logistics";
 import EventContent from "../../components/event-detail/event-content";
 import ErrorAlert from "../../components/ui/error-alert";
 import Head from "next/head";
+import Comments from '../../components/input/comments';
+
 
 function EventDetailPage(props) {
   const event = props.selectedEvent;
@@ -31,6 +33,7 @@ function EventDetailPage(props) {
       <EventContent>
         <p>{event.description}</p>
       </EventContent>
+      <Comments eventId={event.id}/>
     </Fragment>
   );
 }
@@ -55,6 +58,6 @@ export async function getStaticPaths() {
   }));
   return {
     paths: dynamicPath,
-    fallback: true,
+    fallback: "blocking",
   };
 }
