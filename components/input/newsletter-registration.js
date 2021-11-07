@@ -3,11 +3,7 @@ import { useRef, useState } from "react";
 
 
 function NewsletterRegistration() {
-  const foo = {
-    name:"A"
-  }
-  document.querySelectorAll()
-  
+
   const emailInputRef = useRef()
   function registrationHandler(event) {
     event.preventDefault();
