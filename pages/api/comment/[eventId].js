@@ -32,7 +32,7 @@ async function handler(req, res) {
       eventId,
     };
     try {
-      const result = insertDocument(client, "comments", newComment);
+      const result = await insertDocument(client, "comments", newComment);
       newComment._id = result.insertedId;
       res.status(201).json({ message: "success", comment: newComment });
     } catch (error) {
