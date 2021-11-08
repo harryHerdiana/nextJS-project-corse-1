@@ -1,5 +1,5 @@
 import { Fragment } from "react";
-import { getEventById, getFeaturedEvents } from "../../helpers/api-utils";
+import { getEventById, getFeaturedEvents,getAllEvents } from "../../helpers/api-utils";
 import EventSummary from "../../components/event-detail/event-summary";
 import EventLogistic from "../../components/event-detail/event-logistics";
 import EventContent from "../../components/event-detail/event-content";
@@ -52,7 +52,7 @@ export async function getStaticProps(context) {
 }
 
 export async function getStaticPaths() {
-  const events = await getFeaturedEvents();
+  const events = await getAllEvents();
   const dynamicPath = events.map((event) => ({
     params: { eventId: event.id },
   }));
