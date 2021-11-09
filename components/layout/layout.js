@@ -2,7 +2,7 @@ import { Fragment, useContext } from "react";
 import Copyright from "../copyright/Copyright";
 import MainHeader from "./main-header";
 import NotificationContext from "../../store/notification-content";
-import Notification from "../ui/notifiaction";
+import Notification from "../ui/notification";
 
 function Layout(props) {
   const notificationCtx = useContext(NotificationContext);
